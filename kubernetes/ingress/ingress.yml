@@ -4,9 +4,9 @@ metadata:
   name: gl-ingress
   annotations:
     kubernetes.io/ingress.class: "gce"
-    kubernetes.io/ingress.global-static-ip-name: "gl-staging-ip"
+    kubernetes.io/ingress.global-static-ip-name: "gl-production-ip"
     kubernetes.io/ingress.allow-http: "false"
-    ingress.gcp.kubernetes.io/pre-shared-cert: "gl-staging-cert"
+    ingress.gcp.kubernetes.io/pre-shared-cert: "gl-production-cert"
 spec:
   backend:
     serviceName: gl-ui-service
